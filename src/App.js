@@ -2,7 +2,7 @@ import React,{useEffect} from 'react';
 import initStore from './store';
 import {Provider} from 'react-redux'
 import {BrowserRouter as Router} from 'react-router-dom'
-
+import MyApp from './MyApp'
 
 
 const store = initStore()
@@ -14,7 +14,7 @@ function App() {
   return (
     <Provider store={store}>
       <Router>
-        
+        <MyApp/>
       </Router>
     </Provider>
   

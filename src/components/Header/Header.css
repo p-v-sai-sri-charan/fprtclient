@@ -1,0 +1,159 @@
+.header {
+  height: 40px;
+  background-color: #40a35b;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-button {
+  cursor: pointer;
+}
+
+.header-button:hover {
+  background-color: #6ab57f;
+}
+
+.left,
+.right {
+  display: flex;
+}
+
+.home {
+  width: 32px;
+  height: 32px;
+  border-radius: 3px;
+  background-color: #7abf8d;
+  margin-top: 4px;
+  margin-left: 4px;
+}
+
+.icon {
+  margin-top: 4px;
+  margin-left: 4px;
+  color: white;
+}
+
+.boards {
+  display: flex;
+  width: 85px;
+  height: 32px;
+  border-radius: 3px;
+  background-color: #7abf8d;
+  margin-top: 4px;
+  margin-left: 4px;
+}
+
+.boards p {
+  position: relative;
+  color: white;
+  font-weight: 700;
+  font-size: 15px;
+  bottom: 10px;
+  left: 5px;
+}
+
+.search {
+  background-color: #7abf8d;
+  border: none;
+  border-radius: 3px;
+  height: 30px;
+  margin-top: 4px;
+  margin-left: 4px;
+  padding-left: 8px;
+  transition: all 0.3s;
+  width: 150px;
+}
+
+.search:focus {
+  border: none;
+  outline: none;
+  background-color: white;
+  width: 270px;
+}
+
+.search-icon {
+  position: relative;
+  top: 8px;
+  transform: scale(0.9);
+  color: white;
+  right: 28px;
+}
+
+.logo {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo:hover .logo-icon {
+  opacity: 0.8;
+}
+
+.logo:hover i {
+  opacity: 0.8;
+}
+
+.logo:hover {
+  background-color: transparent;
+}
+
+.logo-icon {
+  position: relative;
+  top: 9px;
+  color: white;
+  opacity: 0.5;
+  transform: scale(1.1);
+}
+
+.logo i {
+  color: white;
+  opacity: 0.5;
+  position: relative;
+  font-weight: 700;
+  top: 6px;
+  font-size: 20px;
+}
+
+.add {
+  width: 32px;
+  height: 32px;
+  border-radius: 3px;
+  background-color: #7abf8d;
+  margin-top: 4px;
+}
+
+img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 4px;
+  cursor: pointer;
+}
+
+.menu-profile {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  width: 130px;
+  background-color: #eae6e6;
+  border-radius: 4px;
+  padding-top: 10px;
+}
+
+.menu-item {
+  height: 30px;
+  background-color: #cbc7c7;
+  text-align: center;
+  margin-bottom: 10px;
+  line-height: 30px;
+}
+
+.menu-item:hover {
+  background-color: #b0a9a9;
+}
+
+.menu-item p {
+  color: white;
+  margin: 0;
+}
