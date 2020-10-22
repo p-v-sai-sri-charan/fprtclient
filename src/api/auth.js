@@ -19,7 +19,7 @@ export const login = async({email, password}) => {
 
 export const register = async({email, password, userName}) => {
   try {
-    const res = await fetch('/api/auth/register', {
+    const res = await fetch('https://fprt-be.herokuapp.com/api/auth/register', {
       method: 'POST',
       body: JSON.stringify({
         email, password, userName

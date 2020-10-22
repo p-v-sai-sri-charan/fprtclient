@@ -2,7 +2,7 @@ import {getToken} from '../helpers/token.helper'
 
 export const loadUser = async(id) => {
   try {
-    const res = await fetch(`/api/user/${id}`, {
+    const res = await fetch(`https://fprt-be.herokuapp.com/api/user/${id}`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',

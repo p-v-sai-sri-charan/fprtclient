@@ -2,7 +2,7 @@ import {getToken} from '../helpers/token.helper'
 
 export const loadBoards = async () => {
   try {
-    const res = await fetch(`/api/boards/all`, {
+    const res = await fetch(`https://fprt-be.herokuapp.com/api/boards/all`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -19,7 +19,7 @@ export const loadBoards = async () => {
 
 export const createBoard = async (name) => {
   try {
-    const res = await fetch(`/api/boards/create`, {
+    const res = await fetch(`https://fprt-be.herokuapp.com/api/boards/create`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -39,7 +39,7 @@ export const createBoard = async (name) => {
 
 export const editBoard = async (id, name) => {
   try {
-    const res = await fetch(`/api/boards/edit`, {
+    const res = await fetch(`https://fprt-be.herokuapp.com/api/boards/edit`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -60,7 +60,7 @@ export const editBoard = async (id, name) => {
 
 export const starBoard = async (id, stared) => {
   try {
-    const res = await fetch(`/api/boards/star`, {
+    const res = await fetch(`https://fprt-be.herokuapp.com/api/boards/star`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

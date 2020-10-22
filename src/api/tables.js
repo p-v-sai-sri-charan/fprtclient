@@ -2,7 +2,7 @@ import {getToken} from '../helpers/token.helper'
 
 export const loadTables = async (boardId) => {
   try {
-    const res = await fetch(`/api/tables/${boardId}`, {
+    const res = await fetch(`https://fprt-be.herokuapp.com/api/tables/${boardId}`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -19,7 +19,7 @@ export const loadTables = async (boardId) => {
 
 export const createTable = async (boardId, name) => {
   try {
-    const res = await fetch(`/api/tables/create`, {
+    const res = await fetch(`https://fprt-be.herokuapp.com/api/tables/create`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -40,7 +40,7 @@ export const createTable = async (boardId, name) => {
 
 export const editTable = async (id, name) => {
   try {
-    const res = await fetch(`/api/tables/edit`, {
+    const res = await fetch(`https://fprt-be.herokuapp.com/api/tables/edit`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -61,7 +61,7 @@ export const editTable = async (id, name) => {
 
 export const moveTables = async (tableOneId, tableTwoId) => {
   try {
-    const res = await fetch(`/api/table/move`, {
+    const res = await fetch(`https://fprt-be.herokuapp.com/api/table/move`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

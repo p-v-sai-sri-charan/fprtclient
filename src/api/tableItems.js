@@ -2,7 +2,7 @@ import {getToken} from '../helpers/token.helper'
 
 export const createTableItem = async (tableId, text) => {
   try {
-    const res = await fetch(`/api/table-items/create`, {
+    const res = await fetch(`https://fprt-be.herokuapp.com/api/table-items/create`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -23,7 +23,7 @@ export const createTableItem = async (tableId, text) => {
 
 export const editTableItem = async (id, text) => {
   try {
-    const res = await fetch(`/api/table-items/edit`, {
+    const res = await fetch(`https://fprt-be.herokuapp.com/api/table-items/edit`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -44,7 +44,7 @@ export const editTableItem = async (id, text) => {
 
 export const moveTableItems = async (itemOneId, itemTwoId) => {
   try {
-    const res = await fetch(`/api/table-items/move`, {
+    const res = await fetch(`https://fprt-be.herokuapp.com/api/table-items/move`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
