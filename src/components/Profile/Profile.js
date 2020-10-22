@@ -17,7 +17,7 @@ function Profile() {
   };
   const handleUpdate = (e)=>{
     e.preventDefault()
-    axios.post(`http://localhost:5000/api/auth/updatepassword/${id}`, 
+    axios.post(`https://fprt-be.herokuapp.com/api/auth/updatepassword/${id}`, 
           JSON.stringify({ password: password }),
           {
             headers: {
@@ -29,7 +29,7 @@ function Profile() {
           setPassword("")
   }
   useEffect(()=>{
-    axios.get(`http://localhost:5000/api/auth/getdatabyid/${id}`,{
+    axios.get(`https://fprt-be.herokuapp.com/api/auth/getdatabyid/${id}`,{
       headers: {
       "Content-Type": "application/json",
       Authorization: "Bearer " + localStorage.getItem("token"),
@@ -59,7 +59,7 @@ function Profile() {
           }
           )
         .then((resul) => {
-          axios.post(`http://localhost:5000/api/auth/updateprofilepic/${id}`, 
+          axios.post(`https://fprt-be.herokuapp.com/api/auth/updateprofilepic/${id}`, 
           JSON.stringify({ pic: resul.data.url }),
           {
             headers: {
