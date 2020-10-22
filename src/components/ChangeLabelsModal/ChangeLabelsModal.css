@@ -1,0 +1,112 @@
+.change-labels-modal {
+    z-index: 1;
+    position: absolute;
+    width: 280px;
+    background-color: white;
+    top: 40px;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.labels-logo {
+    color: grey !important;
+    text-align: center;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.change-labels-close-icon {
+    color: grey;
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    transform: scale(.8);
+}
+
+.change-labels-close-icon:hover {
+    color: black;
+}
+
+.search-labels-input {
+    width: 265px;
+    height: 28px;
+    border-radius: 4px;
+    padding-left: 10px;
+    border: 1px solid #7e7e85;
+    transition: .2s ease-in-out;
+}
+
+.search-labels-input:focus {
+    outline: none;
+    border: 1px solid #3434e0;
+}
+
+.labels-container {
+    margin-top: 5px;
+}
+
+.labels {
+    margin-top: 5px !important;
+    font-weight: 600;
+    color: #9b9292 !important;
+}
+
+.label-color-item {
+    display: flex;
+}
+
+.label-color {
+    border-radius: 4px;
+    width: 240px;
+    height: 32px;
+    margin-bottom: 5px;
+}
+
+.label-color:hover .label-color-hovered {
+    visibility: visible;
+}
+
+.edit-label {
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    border-radius: 4px;
+    margin-left: 5px;
+}
+
+.edit-label:hover {
+    background-color: #eceaea;
+}
+
+.edit-label-icon {
+    color: grey;
+    transform: scale(.7);
+    position: relative;
+    top: 5px;
+}
+
+.create-label {
+    background-color: #eceaea;
+    border-radius: 4px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.create-label:hover {
+    background-color: #e9e2e2;
+}
+
+.create-label p {
+    color: #3b3838;
+}
+
+.label-color-hovered {
+    visibility: hidden;
+    width: 8px;
+    height: 32px;
+    position: relative;
+    right: 4px;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    z-index: 1;
+}

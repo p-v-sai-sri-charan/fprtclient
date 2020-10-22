@@ -1,9 +1,8 @@
 import React from 'react'
 import {Routes} from './Routes'
 import {connect} from 'react-redux'
-import {Spinner} from './components/Spinner/Spinner'
 
-function TrelloApp({auth}) {
+function MyApp({auth}) {
 
   const renderApp = () => {
     return (
@@ -12,9 +11,16 @@ function TrelloApp({auth}) {
       </>
     )
   }
+  const renderApps = () => {
+    return (
+      <>
+        <Routes />
+      </>
+    )
+  }
 
   return (
-    auth.isResolved ? renderApp() : <Spinner/>
+    renderApp()
   )
 }
 
@@ -22,4 +28,4 @@ const mapStateToProps = (state) => ({
   auth: state.auth
 })
 
-export default connect(mapStateToProps)(TrelloApp)
+export default connect(mapStateToProps)(MyApp)

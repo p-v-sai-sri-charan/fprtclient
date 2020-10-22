@@ -1,0 +1,44 @@
+.card-item {
+    background-color: white;
+    border-radius: 4px;
+    padding-left: 6px;
+    padding-right: 20px;
+    position: relative;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #beb1b1;
+}
+
+.card-item:hover {
+    background-color: #e5e3e3;
+}
+
+.card-item:hover .item-edit {
+    visibility: visible;
+}
+
+.card-item p {
+    color: #676565;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 6px 0;
+    margin: 0;
+}
+
+.item-edit {
+    visibility: hidden;
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    border-radius: 4px;
+}
+
+.item-edit:hover {
+    background-color: #d2cfcf;
+}
+
+.item-edit-icon {
+    color: grey;
+    transform: scale(.7);
+}

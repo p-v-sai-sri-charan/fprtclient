@@ -1,0 +1,172 @@
+.board-table {
+    background-color: #EBECF0;
+    display: table;
+    width: 270px;
+    margin-right: 10px;
+    border-radius: 4px;
+    clear: both;
+}
+
+.table-top {
+    display: flex;
+    flex-direction: column;
+}
+
+.board-table-name {
+    margin-top: 5px;
+    margin-left: 5px;
+    color: black;
+    border-radius: 3px;
+    font-weight: 700;
+    width: 220px;
+    background-color: transparent;
+    height: 25px;
+    padding-left: 5px;
+    border: 2px solid transparent;
+}
+
+.board-table-name:focus {
+    outline: none;
+    background-color: white;
+    border: 2px solid #8787d9;
+}
+
+.table-menu {
+    border-radius: 4px;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    padding-top: 5px;
+    left: 1px;
+    top: 2px;
+    transform: scale(.8);
+}
+
+.table-menu:hover {
+    background-color: #e5dada;
+}
+
+.table-name-menu {
+    display: flex;
+    position: relative;
+}
+
+.add-table-item {
+    display: flex;
+    width: 225px;
+    color: #6e6f72;
+    position: relative;
+    margin-left: 10px;
+    height: 30px;
+    top: 4px;
+    border-radius: 4px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.add-table-item:hover {
+    background-color: #e2dede;
+}
+
+.add-table-item p {
+    display: flex;
+    width: 220px;
+    position: relative;
+    font-size: 14px;
+    bottom: 1px;
+}
+
+.add-item {
+    transform: scale(.8);
+}
+
+.wrapper {
+    display: flex;
+}
+
+.add-table-item-open {
+    padding: 6px;
+    animation:2s appear-open-add forwards;
+    overflow-y: hidden;
+}
+
+.add-table-item-open textarea {
+    width: 238px;
+    resize: vertical;
+    border: none;
+    border-radius: 4px;
+    min-height: 50px;
+    padding: 10px;
+}
+
+.add-table-item-open textarea::placeholder {
+    font-size: 14px;
+    font-family: "Segoe UI";
+}
+
+.add-table-item-open textarea:focus {
+    outline: none;
+}
+
+.actions-add {
+    display: flex;
+    position: relative;
+}
+
+.add-table-cart {
+    display: flex;
+    background-color: #5AAC44;
+    border-radius: 4px;
+    width: 140px;
+    color: white;
+    height: 32px;
+    align-items: center;
+    padding-left: 10px;
+    margin-top: 5px;
+    transition: .3s all;
+}
+
+.add-table-cart:hover {
+    background-color: #67bc4e;
+}
+
+.add-table-cart p {
+    font-size: 15px;
+}
+
+.cancel-add-item {
+    color: grey;
+    margin: 10px;
+}
+
+.cancel-add-item:hover {
+    color: black;
+}
+
+.menu-add-item {
+    color: grey;
+    transform: scale(1.1);
+    position: absolute;
+    right: 3px;
+    top: 8px;
+    border-radius: 4px;
+    align-items: center;
+    text-align: center;
+    width: 28px;
+    height: 28px;
+}
+
+.menu-add-item:hover {
+    color: black;
+    background-color: #e0cccc;
+}
+
+@keyframes appear-open-add {
+    from{
+        max-height: 30px;
+    }
+    to{
+        max-height: 2000px;
+    }
+}

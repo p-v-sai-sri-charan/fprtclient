@@ -1,0 +1,39 @@
+.boards-page{
+    width: 470px;
+    margin-top: 200px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.board-item{
+    height: 100px;
+    width: 150px;
+    border-radius: 4px;
+    background-color: #40A35B;
+}
+
+.board-item p{
+   color: white;
+    font-weight: 600;
+    margin-left: 15px;
+}
+
+.board-create{
+    height: 100px;
+    width: 150px;
+    border-radius: 4px;
+    background-color: #867e7e;
+    text-align: center;
+    align-items: center;
+}
+
+.board-create p{
+    color: white;
+    font-weight: 600;
+    margin-top: 38px;
+}

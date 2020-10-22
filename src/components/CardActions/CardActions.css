@@ -1,0 +1,73 @@
+.card-actions-menu {
+    text-align: center;
+    z-index: 10;
+    position: absolute;
+    border-radius: 4px;
+    right: 30px;
+    top: 37px;
+    background-color: white;
+    transform: translateX(100%);
+    color: grey;
+    font-size: 14px;
+    animation: .2s appear forwards;
+    overflow-y: hidden;
+}
+
+.top-actions {
+    display: flex;
+}
+
+.top-actions {
+    display: flex;
+}
+
+.table-actions-close-icon {
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    transform: scale(.8);
+}
+
+.table-actions-close-icon:hover {
+    color: black;
+}
+
+.actions-logo {
+    margin-bottom: 8px;
+}
+
+.hr-actions {
+    width: 90%;
+    border-color: rgba(255, 255, 255,.4);
+}
+
+.card-actions-buttons {
+    text-align: start;
+    color: #2d2727;
+}
+
+.card-action-button {
+    line-height: 35px;
+    padding-left: 10px;
+    height: 35px;
+    align-items: center;
+}
+
+.card-action-button p {
+    margin-top: 0;
+}
+
+.card-action-button:hover {
+    background-color: #f3f1f1;
+}
+
+@keyframes appear {
+    from{
+        height: 0;
+        width: 0;
+    }
+    to{
+        height: 340px;
+        width: 300px;
+    }
+}

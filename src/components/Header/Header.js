@@ -1,10 +1,10 @@
 import React, {useEffect, useState} from 'react'
 import './Header.css'
 import {connect} from 'react-redux'
-import {useHistory} from 'react-router-dom'
-//import {logout} from '../../actions'
+import {useHistory,Link} from 'react-router-dom'
+import {logout} from '../../actions'
 import { Avatar } from '@material-ui/core'
-const logout =""
+
 const mapsStateToProps = ({auth}) => ({imageUrl: auth.imageUrl})
 
 export const Header = connect(mapsStateToProps)(({dispatch}) => {
@@ -22,49 +22,36 @@ export const Header = connect(mapsStateToProps)(({dispatch}) => {
     const closeMenu = (e) => {
       setOpen(false)
     }
-
     useEffect(() => {
       window.addEventListener('click', closeMenu)
       return () => {
         window.removeEventListener('click', closeMenu)
       }
     })
-
+    const logouthandle =()=>{
+      dispatch(logout())
+      window.location.replace("/");
+    }
     return (
       <div className="header">
         <div className="left">
           <div className="header-button home"
                onClick={() => history.push('/boards')}
           >
-          <span className="material-icons  icon">
+          <Link to={"/boards"}><span className="material-icons  icon">
               home
-           </span>
+           </span></Link>
           </div>
-          <div className="header-button boards">
-          <span className="material-icons icon">
-             developer_board
-           </span>
-            <p>Доски</p>
-          </div>
-          <div>
-            <input type="text" className="search"/>
-            <span className="material-icons search-icon">
-          search
-           </span>
-          </div>
+          
+          
         </div>
         <div className="header-button logo">
-          <span className="material-icons logo-icon">
+        <Link to={"/boards"}><span className="material-icons logo-icon">
              developer_board
            </span>
-          <i>Trello</i>
+          <i>Boards</i></Link>
         </div>
         <div className="right">
-          <div className="header-button add">
-          <span className="material-icons  icon">
-              add
-           </span>
-          </div>
           <Avatar className="material-icons  icon"
                onClick={handleMenu}
                alt="profile"
@@ -73,9 +60,15 @@ export const Header = connect(mapsStateToProps)(({dispatch}) => {
         {
           isMenuOpen && <div className="menu-profile">
             <div className="menu-item hovered"
-                 onClick={() => dispatch(logout())}
+                 onClick={logouthandle}
             >
+              
               <p>Logout</p>
+            </div>
+            <div className="menu-item hovered"
+                 
+            >
+              <Link to={"/profile"}><p>Profile</p></Link>
             </div>
           </div>
         }
